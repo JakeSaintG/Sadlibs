@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+} 
+
+.debug {
+	border: 2px solid tomato;
+}
+
+body {
+  	color: darkcyan;
+  	font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", sans-serif;
+  	background-color: white;
+	text-align: center;
+}
+
+label {
+	color: white;
+	font-size: 1.2em;
+}
+
+.wrap {
+	min-height: calc(100vh - 58px);
+	background-color: lightgrey;
+}
+
+.titleText {
+	text-align: center;
+	padding: 15px 0 0 0;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.submission {
+	margin: 20px auto;
+  	padding: 6px 8px 52px 8px;
+	background-color: darkcyan;
+	box-shadow: 0 1px 14px rgba(0,0,0, .40);
+	text-align: center;
+}
+
+.box,
+.button {
+	margin-top: 5px;
+	font-family: sans-serif;
+}
+
+.box {
+	float: left;
+	padding: 8px;
+	color: black;
+	border: 2px solid black;
+	width: 80%;
+}
+
+.button {
+	float: right;
+	color: black;
+	padding: 8px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+footer {
+	background: #d9e4ea;
+	padding: 20px;
+  	text-align: center;
+}
+
+/* ================================= Generate ==================================== */
+
+.generate {
+	font-size: 1em;
+	padding: 10px;
+	color: black;
+	border: 2px solid black;
+	margin: 20px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.generate:hover {
+	color: white;
+	border: 4px solid white;
+	background: darkcyan;
+}
+
+
+/* ================================= Pop Up ==================================== */
+
+
+/* ================================= Media Queries ==================================== */
+
+@media (min-width: 700px) {
+
+	.wrap {
+		width: 60%;
+		margin: 0 auto;
+		box-shadow: 0 1px 14px rgba(0,0,0, .40);
+	}
+
+	.container {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.box {
+		width: 60%px;
+
+	}
+	.submission {
+		width: 70%;
+		min-width: 400px;
+		max-width: 600px;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.name,
+	.main-nav li {
+		float: left;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1025px) {
+
+}
