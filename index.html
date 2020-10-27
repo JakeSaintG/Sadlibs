@@ -9,51 +9,35 @@
     </head>
 
     <body>
-        <div class="wrap">
+        <main class="wrap" role="main">
             <header class="titleText">
                 <h1>Time for Sadlibs!</h1>
             </header>
+            <div class="generatedLib" id="generatedLib"></div>
             <div class="container">
                 <div class="submission">
                     <label for="email">Throw me an...</label>
-                    <div>
-                        <input type="text" name="adjective1" placeholder="Adjective" size=30px maxlength="30" class="box">
-                        <input type="submit" value="Submit" class="button">
-                    </div>
+                    <input type="text" name="adjective1" id="adjective1" placeholder="Adjective" size=30px maxlength="30" class="box">
                 </div>
                 <div class="submission">
                     <label for="Password">Give me another...</label>
-                    <div>
-                        <input type="text" name="adjective2" placeholder="Adjective" size=30px maxlength="30" class="box">
-                        <input type="submit" value="Submit" class="button">
-                    </div>
+                    <input type="text" name="adjective2" id="adjective2" placeholder="Adjective" size=30px maxlength="30" class="box">
                 </div>
                 <div class="submission">
                     <label for="Password">Write a...</label>
-                    <div>
-                        <input type="text" name="curse" placeholder="Curse Word" size=30px maxlength="30" class="box">
-                        <input type="submit" value="Submit" class="button">
-                    </div>
+                    <input type="text" name="curse" id="curse" placeholder="Curse Word" size=30px maxlength="30" class="box">
                 </div>
                 <div class="submission">
                     <label for="Verb">Give me...</label>
-                    <div>
-                        <input type="text" name="Verb" placeholder="Verb" size=30px maxlength="30" class="box">
-                        <input type="submit" value="Submit" class="button">
-                    </div>
+                    <input type="text" name="Verb" id="verb" placeholder="Verb" size=30px maxlength="30" class="box">
                 </div>
                 <div class="submission">
                     <label for="noun">Input a...</label>
-                    <div>
-                        <input type="text" name="noun" placeholder="Noun" size=30px maxlength="30" class="box">
-                        <input type="submit" value="Submit" class="button">
-                    </div>
+                    <input type="text" name="noun" id="noun" placeholder="Noun" size=30px maxlength="30" class="box">
                 </div>
             </div>
-
-            <input type="submit" value="Generate!" class="generate trigger_popup_fricc">
-    
-        </div>
+            <input type="submit" value="Generate!" class="generate" id="generate" onclick="generateLib()">
+        </main>
         <footer>
             <span>&copy;1993 JakeSaintG</span>
         </footer>
