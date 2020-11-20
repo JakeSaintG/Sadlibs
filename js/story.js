@@ -10,9 +10,15 @@ function generateLib() {
     console.log(verb)
     const noun = document.getElementById("noun").value;
     console.log(noun)
+    const verb2 = document.getElementById("verb2").value;
+    console.log(verb2)
 
 
     document.getElementById("generatedLib").innerHTML = `
-        <p>The ${adjective} nurse decided to try to become a ${adjective2}
-        programmer before a ${curse} pandemic hit. Now he is going to have to ${verb} his ${noun} off to do this homework and work overtime...</p>`
+        <p>The ${adjective} nurse decided to try his best to become a programmer.
+        He was excited for the ${adjective2} challenge!
+        This was a few months before the ${curse} pandemic hit.
+        Now he is going to have to ${verb} his ${noun} off.
+        Overall I think he'll be okay if he would ${verb2} and stop complaining.
+        </p>`
     }

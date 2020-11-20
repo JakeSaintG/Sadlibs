@@ -9,7 +9,7 @@
 body {
   	color: darkcyan;
   	font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", sans-serif;
-  	background-color: white;
+  	background-color: rgb(83, 83, 83);
 	text-align: center;
 }
 
@@ -22,7 +22,8 @@ label {
 	display: flex;
 	flex-direction: column;
 	min-height: calc(100vh - 58px);
-	background-color: lightgrey;
+	background-color: rgb(41, 41, 41);
+	padding-bottom: 20px;
 }
 
 .titleText {
@@ -40,16 +41,18 @@ label {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	border-radius: 5px;
 }
 
 label {
 	padding: 10px;
 }
 
-.box,
-.button {
+.box {
 	margin-top: 5px;
 	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
 }
 
 .box {
@@ -57,14 +60,6 @@ label {
 	padding: 8px;
 	color: black;
 	border: 2px solid black;
-}
-
-.button {
-	float: right;
-	color: black;
-	padding: 8px;
-	border: 2px solid black;
-	cursor: pointer;
 }
 
 .container {
@@ -75,7 +70,8 @@ label {
 footer {
 	background: #d9e4ea;
 	padding: 20px;
-  	text-align: center;
+	text-align: center;
+	font-weight: bold;
 }
 
 /* ================================= Generate ==================================== */
@@ -88,8 +84,9 @@ footer {
 	margin: 20px auto;
 	text-decoration: none;
 	cursor: pointer;
-	width: 100%;
 	align-items: center;
+	border-radius: 5px;
+	font-weight: bold;
 }
 
 .generate:hover {
@@ -134,8 +131,10 @@ footer {
 	}
 
 	.generate {
-		width: 540px;
+		width: 70%;
 		margin: 0 auto;
+		min-width: 400px;
+		max-width: 600px;
 	}
 
 	.main-nav {
